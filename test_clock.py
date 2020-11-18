@@ -3,7 +3,7 @@ import pytest
 from clock import Clock
 
 
-def test_api_response_is_being_checling_tea_time_correctly():
+def test_api_response_is_checking_tea_time_correctly():
 
     res = Clock.now("est")
     expected_response = "it's 15:00 o'clock in est, teatime!"
