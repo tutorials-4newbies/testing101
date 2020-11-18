@@ -39,3 +39,15 @@ pip install -r requirements.txt
 2. mock - mocking
 3. spies - using spy
 4. time_travel
+
+## Libraries
+
+* [freeze gun](https://github.com/spulec/freezegun)
+* [pytest](https://docs.pytest.org/en/stable/)
+* [pytest mocker](https://pypi.org/project/pytest-mock/)
+* [python builtin mock](https://docs.python.org/3/library/unittest.mock.html)
+* [unittest in python](https://docs.python.org/3/library/unittest.html)
+
+## Read more
+
+* [Google testing blog](https://testing.googleblog.com/)
