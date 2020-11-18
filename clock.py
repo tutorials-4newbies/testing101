@@ -8,7 +8,7 @@ class Clock:
     def now(timezone: str):
         data = Clock._get_time(timezone=timezone)
         data_as_datetime = datetime.datetime.strptime(data['currentDateTime'], "%Y-%m-%dT%H:%M%z")
-        if data_as_datetime.hour > 14 and data_as_datetime.hour < 18:
+        if 14 < data_as_datetime.hour < 18:
             return f"it's {data_as_datetime.strftime('%H:%M')} o'clock in {timezone}, teatime!"
         else:
             return f"it's {data_as_datetime.strftime('%H:%M')} o'clock in {timezone}, not a good time for tea!"
