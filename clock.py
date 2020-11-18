@@ -5,7 +5,7 @@ class Clock:
     @staticmethod
     def now(timezone: str):
         data = Clock._get_time(timezone=timezone)
-        return data["currentDateTime"]
+        return f"{data['currentDateTime']} oclock in {timezone}"
 
     @staticmethod
     def _get_time(timezone: str):
