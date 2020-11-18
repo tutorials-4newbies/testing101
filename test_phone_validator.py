@@ -2,6 +2,7 @@ import unittest
 
 from lib import CellPhoneValidator
 
+
 # This is the spec!
 class PhoneValidatorTestCase(unittest.TestCase):
 
@@ -31,6 +32,7 @@ class PhoneValidatorTestCase(unittest.TestCase):
 
     def test_cell_phone_number_can_contain_spaces_and_dashes(self):
         pass
+
 
 if __name__ == '__main__':
     unittest.main()
