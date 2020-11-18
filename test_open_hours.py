@@ -36,5 +36,7 @@ class OpenHoursHelperTestCase(unittest.TestCase):
 
         self.assertTrue(is_open)
 
+# Sometimes we might invert control and have the class "ask" for a dependency, resolved elsewhere
+
 if __name__ == '__main__':
     unittest.main()

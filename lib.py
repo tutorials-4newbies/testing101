@@ -15,7 +15,13 @@ OPENING_HOURS = {
 
 
 class OpeningHoursHelper:
+    def __init__(self, time_provider=datetime.datetime):
+        self.time_provider = time_provider
 
     def is_it_open_now(self):
-        pass
+        now = self.time_provider.now()
+        if now.weekday() not in OPENING_HOURS:
+            return False
+        opening_hours_today = OPENING_HOURS[now.weekday()]
 
+        return opening_hours_today["open_hour"] <= now.hour < opening_hours_today["close_hour"]
