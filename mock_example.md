@@ -6,7 +6,7 @@
 
             def json(self):
                 return {
-                    "currentDateTime": "isnow"
+                    "currentDateTime": "2020-11-18T15:00-05:00"
                 }
 
         return MockResponse()
