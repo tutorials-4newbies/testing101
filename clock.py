@@ -13,10 +13,12 @@ class Clock:
         else:
             return f"it's {data_as_datetime.strftime('%H:%M')} o'clock in {timezone}, not a good time for tea!"
 
+
     @staticmethod
     def _get_time(timezone: str):
         # what's the problem here?
         res = requests.get(f"http://worldclockapi.com/api/json/{timezone}/now")
+
         data = res.json()
 
         return data
